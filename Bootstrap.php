@@ -1,13 +1,13 @@
 <?php
 /**
  * ESD Link Configuration
- * @link http://www.kloepper.in
+ * @link
  * @package Plugins
  * @subpackage Frontend
  * @copyright Copyright (c) 2014, shopware AG
  * @author Sebastian Kloepper
  */
-class Shopware_Plugins_Frontend_SkEsdLink_Bootstrap extends Shopware_Components_Plugin_Bootstrap
+class Shopware_Plugins_Frontend_SkloeEsdLink_Bootstrap extends Shopware_Components_Plugin_Bootstrap
 {
 	/**
 	 * standard install method - subscribe an event
@@ -49,13 +49,13 @@ class Shopware_Plugins_Frontend_SkEsdLink_Bootstrap extends Shopware_Components_
 		$response = $args->getSubject()->Response();
 		
 		$view = $args->getSubject()->View();
-		$config = Shopware()->Plugins()->Frontend()->SkEsdLink()->Config();
+		$config = Shopware()->Plugins()->Frontend()->SkloeEsdLink()->Config();
         if (!$request->isDispatched() || $response->isException() || $request->getModuleName() != 'frontend' || !$view->hasTemplate()) {
              return;
          }
-		$view->SkEsdLink = $config;
+		$view->SkloeEsdLink = $config;
         $view->addTemplateDir($this->Path() . 'Views/');
-		$args->getSubject()->View()->extendsTemplate('frontend/plugins/sk_esdlink/index.tpl');
+		$args->getSubject()->View()->extendsTemplate('frontend/plugins/skloe_esdlink/index.tpl');
 	}
 	
 	/**
@@ -67,13 +67,13 @@ class Shopware_Plugins_Frontend_SkEsdLink_Bootstrap extends Shopware_Components_
 		return array(
 			'version' => '1.0.0',
 			'autor' => 'Sebastian Kloepper',
-			'copyright' => 'Copyright © 2014',
+			'copyright' => 'Copyright Â© 2014',
 			'label' => 'ESD Link Konfiguration',
 			'source' => $this->getSource(),
 			'description' => 'Erm&ouml;glicht die Definition, dass nach einer Bestellung die kostenlosen ESD-Artikel direkt downgeloadet werden k&ouml;nnen - unabh&auml;ngig vom Zahlungsstatus!',
 			'license' => '',
-			'support' => 'http://forum.shopware.de',
-			'link' => 'http://www.kloepper.in',
+			'support' => 'http://forum.shopware.com',
+			'link' => '',
 			'changes' => array(
 				'1.0.1'=>array('releasedate'=>'2014-11-08', 'lines' => array(
 					'First release'
