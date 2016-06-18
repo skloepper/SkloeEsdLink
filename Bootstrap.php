@@ -55,7 +55,7 @@ class Shopware_Plugins_Frontend_SkloeEsdLink_Bootstrap extends Shopware_Componen
          }
 		$view->SkloeEsdLink = $config;
         $view->addTemplateDir($this->Path() . 'Views/');
-		$args->getSubject()->View()->extendsTemplate('frontend/plugins/skloe_esdlink/index.tpl');
+		$args->getSubject()->View()->extendsTemplate('frontend/plugins/sk_esdlink/index.tpl');
 	}
 	
 	/**
