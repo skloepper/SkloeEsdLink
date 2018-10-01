@@ -24,7 +24,6 @@ class Shopware_Plugins_Frontend_SkloeEsdLink_Bootstrap extends Shopware_Componen
 			array('label'=>'Download bei kostenlosen Artikeln direkt anzeigen',
 			'value'=>'',
 			'scope'=> \Shopware\Models\Config\Element::SCOPE_SHOP));
-		$form->save();
 		
 	 	return true;
 	}
