@@ -35,7 +35,7 @@ class Shopware_Plugins_Frontend_SkloeEsdLink_Bootstrap extends Shopware_Componen
 	 */
 	public function getVersion()
 	{
-		return '1.0.0';
+		return '1.0.2';
 	}
 	
 	/**
@@ -64,7 +64,7 @@ class Shopware_Plugins_Frontend_SkloeEsdLink_Bootstrap extends Shopware_Componen
 	public function getInfo()
     {
 		return array(
-			'version' => '1.0.0',
+			'version' => '1.0.2',
 			'autor' => 'Sebastian Kloepper',
 			'copyright' => 'Copyright © 2014',
 			'label' => 'ESD Link Konfiguration',
@@ -74,8 +74,8 @@ class Shopware_Plugins_Frontend_SkloeEsdLink_Bootstrap extends Shopware_Componen
 			'support' => 'http://forum.shopware.com',
 			'link' => '',
 			'changes' => array(
-				'1.0.1'=>array('releasedate'=>'2014-11-08', 'lines' => array(
-					'First release'
+				'1.0.2'=>array('releasedate'=>'2018-10-01', 'lines' => array(
+					'Compatible with 5.5.x'
 				))
 			),
 		);
